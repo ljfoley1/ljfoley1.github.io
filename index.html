@@ -12,14 +12,18 @@
     <title>Leo Foley's Portfolio</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,414 +34,246 @@
 
 </head>
 
-<body>
+<body id="page-top">
 
-    <!-- Navigation -->
-    <!--<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$ ( "#menu-close").click();>Leo Foley</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$ ( "#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$ ( "#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>-->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Portfolio</a>
+            </div>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1 style="color:#1442D3;font-family:Palatino">Leo Foley</h1>
-            <h3 style="color:#F17507">GIS Work Portfolio &amp; Contact Information</h3>
-            <br>
-            <!--<a href="#about" class="btn btn-dark btn-lg">Find Out More</a>-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <!--<li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Leo Foley's Portfolio</h1>
+                <!--<hr>-->
+                <!--<p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>-->
+                <!--<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>-->
+            </div>
         </div>
     </header>
 
-    <!-- About -->
-    <!-- <section id="about" class="about">
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <hr class="light">
+                    <p class="text-faded">I am working toward a career in GIS, whether it be data collection, cartography, or script development.  My aspiration is to gain as much GIS knowledge as much as possible to become a valuable asset in the world of map making and, in the future, software development.</p>
+                    <!--<a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2 class="section-heading">Projects</h2>
+                    <hr class="primary">
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
-    </section>
-	
-	<!-- Callout -->
-    <aside class="chicago_map1">
-        <div class="text-vertical-center">
-            <h1>About Me</h1>
-			<p>I am currently working toward a career in GIS, whether it be data collection, cartography, or script development.  My aspiration is to gain as much GIS knowledge as much as possible to become a valuable asset in the world of map making and, in the future, software development.</p>
-			<!--<p>Phone: 773-829-1693</p>-->
-        </div>
-    </aside>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>ArcMap &amp; QGIS Projects</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img src="http://gdurl.com/qkgl" alt="MCE_raster_project" height=250px>
-							<!--<img class="img-responsive" src="http://placehold.it/250x150" alt="">-->
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>-->
-                            </span>
-                                <h4>
-                                    <strong>Multi-Criteria Evaluation Raster Map</strong>
-                                </h4>
-                                <p>This map of Chicago was created with raster layers containing median income, drivership, and distance from CTA stop information to determine which parts of the city could most use new bus stops. </p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<!--<img class="MCE_raster_project">-->
-							<img src="http://gdurl.com/FCZK" alt="lf_Green_Lifestyle_Map_Chicago" height=250px>
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <h4>
-                                    <strong>Green Lifestyle Features in Chicago</strong>
-                                </h4>
-                                <p>Half-mile distances from vegan restaurants (yellow) blended with half-mile distances from thrift stores (blue) into green areas, coupled with bike lanes in green, show which areas of Chicago are friendlist to a low-impact lifestyle based on how green the area is.</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <!--<div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img class="img-responsive" src="http://placehold.it/230x200" alt="">
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <!--<h4>
-                                    <strong>Map 3</strong>
-                                </h4>
-                                <p>Map 3 Description</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img class="img-responsive" src="http://placehold.it/200x150" alt="">
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <!--<h4>
-                                    <strong>Map 4</strong>
-                                </h4>
-                                <p>Map 4 Description</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-	
-	<!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Corel Draw &amp; Photopaint Projects</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img src="http://gdurl.com/Xxoi" alt="lf_cambodian_cartogram" height=250px>
-							<!--<img class="img-responsive" src="http://placehold.it/250x150" alt="">-->
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <h4>
-                                    <strong>U.S. Cambodian Population Cartogram</strong>
-                                </h4>
-                                <p>This map features cartograms representing Cambodian population in the U.S. along with a reference map.</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img src="http://gdurl.com/i35C" alt="lf_inset_map" height=250px>
-							<!--<img class="img-responsive" src="http://placehold.it/200x180" alt="">-->
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <h4>
-                                    <strong>Directions to Edgebrook Golf Course</strong>
-                                </h4>
-                                <p>Major routes from the Chicago area toward Edgebrook Golf Course as well local area routes are displayed</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img src="http://gdurl.com/HzC6" alt="lfoley_propcircle" height=250px>
-							<!--<img class="img-responsive" src="http://placehold.it/230x200" alt="">-->
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <h4>
-                                    <strong>Southwest Chicago Neighborhoods Populations</strong>
-                                </h4>
-                                <p>Pie charts of ethnic makeup, sized proportional to the respective total population, are displayed for Chicago neighborhoods 70-75.</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            </div>
-                        </div>
-                        <!--<div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<img class="img-responsive" src="http://placehold.it/200x150" alt="">
-                                <!--<span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>-->
-                                <!--<h4>
-                                    <strong>Map 4</strong>
-                                </h4>
-                                <p>Map 4 Description</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-	
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Contact Information</h1>
-			<p>Email: 130foley@gmail.com</p>
-			<p>Phone: 773-829-1693</p>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <!--<section id="portfolio" class="portfolio">
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
                     </div>
-                    <!-- /.row (nested) -->
-                    <!--<a href="#" class="btn btn-dark">View More Items</a>-->
                 </div>
-                <!-- /.col-lg-10 -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+        </div>-->
     </section>
 
-    <!-- Call to Action -->
-    <!--<aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/MCE_raster_project.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/MCE_raster_project_thumb.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    ArcMap
+                                </div>
+                                <div class="project-name">
+                                    "Need for Bus Stops" Multi-Criteria Evaluation Raster
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/lf_Green_Lifestyle_Map_Chicago.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/lf_Green_Lifestyle_Map_Chicago_thumb.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    QGIS
+                                </div>
+                                <div class="project-name">
+                                    Green Lifestyle Features in Chicago
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/lf_cambodian_cartogram.bmp" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/lf_cambodian_cartogram_thumb.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Corel Photopaint &amp; Corel Draw
+                                </div>
+                                <div class="project-name">
+                                    U.S. Cambodian Population Cartogram
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/lf_inset_map.bmp" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/lf_inset_map_thumb.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Corel Draw
+                                </div>
+                                <div class="project-name">
+                                    Direction Map to Edgebrook Golf Course
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/lfoley_propcircle.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/lfoley_propcircle_thumb.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Corel Photopaint &amp; Corel Draw
+                                </div>
+                                <div class="project-name">
+                                    Southwest Chicago Neighborhood Populations
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/lf_hawaiianpop_dotdensitymap.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/lf_hawaiianpop_dotdensitymap_thumb.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Corel Draw
+                                </div>
+                                <div class="project-name">
+                                    Hawaiian Population in Selected States - Dot Density
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
             </div>
         </div>
     </aside>-->
 
-    <!-- Map -->
-    <!--<section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
-    </section>-->
-
-    <!-- Footer -->
-    <!--<footer>
+    <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Leo Foley's Portfolio 2016</p>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Information</h2>
+                    <hr class="primary">
+                    <!--<p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>-->
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>773-829-1693</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">130foley@gmail.com</a></p>
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>-->
+    </section>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
